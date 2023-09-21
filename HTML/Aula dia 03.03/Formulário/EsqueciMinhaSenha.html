@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir senha</title>
+    <style>
+        body {
+            background-color: plum;
+            margin: 0 auto;
+        }
+
+        form,
+        h1,
+        h2,
+        h3,
+        a {
+            color: rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        div {
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        form {
+            background-color: rgb(211, 146, 211);
+            box-shadow: 0 8px 32px 0 rgb(255, 25, 209);
+padding: 20px 32px;
+flex-direction: column;
+border: 1px solid rgb(255, 25, 209);
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <h1> Redefinição de senha</h1>
+        <form name="flogin">
+            <label for="senha">Nova senha:</label><br><br>
+            <input type="text" name="senha" size="30" maxlength="30"> <br><br>
+            <label for="senha">Confirme a senha:</label><br><br>
+            <input type="text" name="senha" size="30" maxlength="30"> <br><br>
+            <input type="submit" value="Definir">
+            <input type="reset" value="Limpar"><br><br>
+        </form><br><br>
+        <a href="index.html">Retornar a página inicial</a>
+    </div>
+</body>
+</html>

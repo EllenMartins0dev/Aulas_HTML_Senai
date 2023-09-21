@@ -1,0 +1,277 @@
+/* Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.titulo {
+  color: rgb(50, 2, 56);
+  margin-bottom: 35px;
+}
+
+.active{
+  background-color: purple;
+}
+
+.alinharTexto{
+  text-align: center;
+}
+
+/* Estilos Header */
+
+div.header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 32px;
+  background-color: rgb(50, 2, 56);
+  color: white;
+
+  position: relative;
+}
+
+div.header div {
+  position: absolute;
+
+  top: 16px;
+  left: 20px;
+}
+
+div.header div img {
+  width: 64px;
+  height: 64px;
+
+  align-self: flex-start;
+}
+
+div.header ul {
+  display: flex;
+  
+ position: absolute;
+  top: 33px;
+  right: 20px;
+  list-style: none;
+}
+
+div.header ul li {
+  text-align: right;
+  margin-left: 15px;
+}
+
+div.header ul li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  /* border:  2px solid #f2f2f2; */
+  border-radius: 5px;
+  color: #f2f2f2;
+}
+
+div.header ul li a:hover {
+  cursor: pointer;
+  background-color: purple;
+}
+
+/* header ul li:not(:first-of-type) {
+  margin-left: 32px;
+} */
+
+/* Estilos Conteudo -  Home */
+
+#produto {
+  flex-direction: right;
+  align-items: right;
+}
+
+div.main {
+  padding: 0 64px;
+  text-align: center;
+}
+
+/* Estilos Conteudo -  Compras */
+
+.lista-de-compras {
+  margin: 0 auto;
+  width: 1200px;
+  height: 350px;
+  box-shadow: 0 0  10px #999;
+
+  padding: 20px;
+
+  display: flex;
+}
+
+.item-compra{
+  width: 33%;
+  height: 90%;
+
+  margin-left: 15px;
+
+  list-style: none;
+  text-align: center;
+
+  border-radius: 10px;
+}
+
+.titulo-compra {
+  width: 100%;
+  height: 40px;
+
+  text-align: center;
+  background-color: purple;
+  color: #f2f2f2;
+
+  padding-top: 8px;
+
+  font-weight: bold;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.img-compra {
+  width: 100%;
+  height: 220px;
+  background-color: #f2f2f2;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.preco-compra {
+  width: 100%;
+  height: 40px;
+  
+  text-align: center;
+  padding-top: 8px;
+
+  background-color: rgb(50, 2, 56);
+  color: #f2f2f2;
+  font-weight: bold;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Estilos Conteudo -  Minha conta - Cadastro*/
+
+
+
+footer img {
+  width: 32px;
+  height: 32px;
+  object-fit: scale-down;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos Conteudo -  Venda*/
+
+
+.faleconosco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(255, 255, 255,0.03);
+}
+a:hover {
+  color: purple;
+  border-bottom: 2px solid;
+  border-radius: 1px;
+  width: 6px;
+  height: 5px;
+}
+/* Estilos Conteudo -  Minha conta*/ 
+.forms {
+margin: 5px;
+}
+form {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  margin-bottom: 8px;
+  font-size: xx-large;
+}
+
+label:not(:first-of-type) {
+  margin-top: 16px;
+}
+
+form input {
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+  padding: 4px 0;
+  width: 275px;
+  outline: 0;
+}
+
+form button:first-of-type {
+  margin-top: 16px;
+}
+
+form button {
+  width: 100%;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+form button:not(:first-of-type){
+  margin-top: 6px;
+}
+
+/* Estilos Conteudo -  Sobre nós*/ 
+.image-faleconosco {
+  justify-content: flex-start;
+  height:350px;
+  width: 330px;
+  align-items: center;
+  margin-left: 30px;
+}
+.text-information {
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 350px;
+  height: 330px;
+  box-shadow: 0 0  10px #999;
+align-items: flex-end;
+  padding: 20px;
+
+  display: flex;
+}

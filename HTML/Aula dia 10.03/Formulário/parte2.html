@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif;
+            color: blanchedalmond;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+       
+        a  {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+        <h1>Dados profissionais</h1><br><br><br>
+        <h2>Natureza do cargo:</h2>
+        <form action="">
+            <input type="radio" name="cargo" value="ger"/> Gerencia<br />
+            <input type="radio" name="cargo" value="fin"/> Financiamento<br />
+            <input type="radio" name="cargo" value="rec"/> Recepção<br />
+            <input type="radio" name="cargo" value="adm"/> Administrativo<br /><br><br><br>
+            <h2>Área de interesse:</h2>
+            <input type="checkbox" name="area" value="bio"/> Biologia<br />
+            <input type="checkbox" name="area" value="exatas"/> Exatas<br />
+            <input type="checkbox" name="area" value="his"/> História<br />
+            <input type="checkbox" name="area" value="enge"/> Engenharia<br /><br><br><br><br>
+            <label for="text">Mini currículo</label><br><br><br><br>
+            <textarea id="mensagem" name="mensagem" cols="40px" rows="5px" placeholder="Digite aqui"> </textarea><br><br><br><br>
+            <input type="submit" name="cadastro" value="Concluir cadastro">
+            <input type="reset" value="Limpar dados"><br><br><br>
+        </form>
+        <a href="index2.html">Retornar à página inicial</a>
+
+</body>
+</html>

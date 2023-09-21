@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicas</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/styleTeste.css">
+</head>
+
+<body>
+    <nav class="navbar has-background-info">
+        <div class="navbar-brand">
+            <a role="button" arial-label="menu" aria-expanded="false" class="navbar-burger"
+                data-target="navbarBasicExample">
+                <span arial-hidden="true"></span>
+                <span arial-hidden="true"></span>
+                <span arial-hidden="true"></span>
+            </a>
+        </div>
+
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item">Home</a>
+                <a href="musicas.html" class="navbar-item active">Músicas</a>
+                <a href="" class="navbar-item">Contato</a>
+            </div>
+        </div>
+
+
+    </nav>
+    <div class="container">
+        <section class="section">
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">Card 1</p>
+                        </header>
+                        <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                            possimus saepe corrupti sunt, numquam maiores? Fugit numquam, quis porro ratione omnis
+                            reiciendis vero, libero quaerat totam eveniet est voluptatem ipsam.</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">Card 2</p>
+                        </header>
+                        <div class="card-content">
+                       <img src="img/bruno-mars-.webp"><br>
+                      - I Was Your Man <br>
+                      - Talking To The Moon <br>
+                      
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">Card 3</p>
+                        </header>
+                        <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                            possimus saepe corrupti sunt, numquam maiores? Fugit numquam, quis porro ratione omnis
+                            reiciendis vero, libero quaerat totam eveniet est voluptatem ipsam.</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+    });
+</script>
+
+</html>

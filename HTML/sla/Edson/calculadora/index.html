@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0e0e0;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        div#container {
+            background-color: #e0e0e0;
+            box-shadow: 3px 3px 9px #bebebe, -3px -3px 9px #ffffff;
+            padding: 24px;
+            border-radius: 16px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#visor {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 16px;
+            border-radius: 16px;
+            width: 100%;
+            box-shadow: inset 3px 3px 9px #bebebe, inset -3px -3px 9px #ffffff;
+            margin-bottom: 16px;
+
+        }
+
+        div#buttons {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: repeat(4, 56px);
+            grid-template-rows: repeat(5, 56px);
+        }
+
+        button {
+            box-shadow: 3px 3px 9px #bebebe, -3px -3px 9px #ffffff;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: x-large;
+            font-weight: bold;
+            color: darkslategrey;
+            transition: 0.5s all;
+
+        }
+
+        button:active {
+            box-shadow: inset 3px 3px 9px #bebebe, inset -3px -3px 9px #ffffff;
+
+        }
+
+        .delete {
+            color: #e11d48;
+        }
+
+        .action {
+            color: #16a34a
+        }
+
+        .equal {
+            background-color: #16a34a;
+            color: #f0f0f5;
+        }
+
+        #operation {
+            font-size: small;
+        }
+
+        #result {
+            font-size: xx-large;
+            font-weight: bold;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="visor">
+            <p id="operation">0</p>
+            <p id="result">0</p>
+        </div>
+
+        <div id="buttons">
+            <button class="delete" onclick="send('C')">C</button>
+            <button class="action">()</button>
+            <button class="action">%</button>
+            <button class="action" onclick="send('D')">D</button>
+            <button onclick="send('7')" class="button-text">7</button>
+            <button onclick="send('8')" class="button-text">8</button>
+            <button onclick="send('9')" class="button-text">9</button>
+            <button class="action" onclick="send('*')" vlasclass="button-text">X</button>
+            <button onclick="send('4')" class="button-text">4</button>
+            <button onclick="send('5')" class="button-text">5</button>
+            <button onclick="send('6')" class="button-text">6</button>
+            <button class="action" onclick="send('-')" vlasclass="button-text">-</button>
+            <button onclick="send('1')" class="button-text">1</button>
+            <button onclick="send('2')" class="button-text">2</button>
+            <button onclick="send('3')" class="button-text">3</button>
+            <button class="action" onclick="send('+')" vlasclass="button-text">+</button>
+            <button>+/-</button>
+            <button onclick="send('0')" class="button-text">0</button>
+            <button onclick="send('.')" class="button-text">.</button>
+            <button class="equal">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

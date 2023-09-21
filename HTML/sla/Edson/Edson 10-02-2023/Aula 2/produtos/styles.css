@@ -1,0 +1,26 @@
+ul#products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  list-style: none;
+  width: auto;
+}
+
+ul#products li {
+  padding: 24px 32px;
+  box-shadow: 4px 4px 12px #d9d9d9, -4px -4px 12px #ffffff;
+  border-radius: 8px;
+}
+
+ul#products li img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+ul#products li p {
+  font-size: larger;
+}
+
+ul#products li p span {
+  font-size: xx-large;
+}

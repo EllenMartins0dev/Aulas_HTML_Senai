@@ -1,0 +1,82 @@
+
+background-color: serve para colocar cor no fundo.
+ex:
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamãe</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+---------------------------------------------------------------------------------------------------------------------
+h1{
+            color:serve para colocar cor na letra.
+Ex:<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamãe</title>
+    <style>
+        h1{
+            color:aliceblue;
+        }
+        h3{
+            color:aliceblue;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+-------------------------------------------------------------------------------------------------------------------
+ font-family: serve para mudar a fonte.
+Ex:<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamãe</title>
+    <style>
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+-------------------------------------------------------------------------------------------------------------------
+<a href=:serve para colocar link na página (esse abre direto).
+Ex:<body>
+    <h3><a href= "exemplo1.html">Voltar</a></h3>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------
+<aq href="nome do site" target="_blank":Serve para colocar link na página, porém ele abre em outra guia.
+Ex:</head>
+<body>
+    <h3><a href= "exemplo1.html" target="_blank">Voltar</a></h3>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>:define que o tipo de arquivo é HTML.
+--------------------------------------------------------------------------------------------------------------------
+<html lang="pt-br">:define a linguagem, no caso é português Brasil.
+--------------------------------------------------------------------------------------------------------------------
+ <meta charset="UTF-8">: define que na programação aceita acentuação.
+----------------------------------------------------------------------------------------------------------------------
+Windows+.= acrescenta emoji.
+--------------------------------------------------------------------------------------------------------------------
+alt+tab:troca a guia do computador (ex:troca do bloco de notas pro Google automático,
+mostrando todas as guias de apps disponíveis)
+--------------------------------------------------------------------------------------------------------------------
+"#famosos">:faz link para o assunto em baixo.
+Ex:<body>
+    <h1>Notícias do<a href="#política"> mundo da politicagem</a></h1>
+    <br><br><br><br><br><br><br><br>
+    <hr>
+    <br><br><br><br><br><br><br><br><br><br>
+        <h1 id="política">Notícia de política</h1>
+        <p><h2 style=color:white;> Bolsonaro aparece na mídia para revelar que está com diabetes.
+Em entrevista, ele revelou: "Não devia ter comido tanto leite condensado, 'tá okay'?"</h2></p>       
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------

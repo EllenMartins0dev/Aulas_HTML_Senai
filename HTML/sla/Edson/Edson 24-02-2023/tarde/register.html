@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 35vw;
+            padding: 24px 32px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        form label {
+            margin-bottom: 4px;
+        }
+
+        form label:not(:first-of-type) {
+            margin-top: 8px;
+        }
+
+        form input {
+            width: 100%;
+
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(128, 128, 128, 0.5);
+
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        form button {
+            width: 100%;
+
+            background-color: rgb(0, 60, 255);
+            color: #ffffff;
+            border: 0;
+            padding: 16px;
+            border-radius: 8px;
+
+            margin-top: 16px;
+
+            font-size: medium;
+            cursor: pointer;
+
+            box-shadow: 2px 2px 6px rgba(0, 60, 255, 0.02);
+        }
+
+        form div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form div p {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        form div p input {
+            width: min-content;
+            margin-right: 8px;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="John Doe">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="******">
+
+        <label id="age" for="age">Idade</label>
+        <input type="range" name="age" id="age" min="18" max="60" step="1" oninput="changeAge()">
+
+        <p style="
+            margin-top: 16px;
+            margin-bottom: 6px;
+        ">Informe seu gênero</p>
+        <div>
+            <p>
+                <input type="radio" name="genero" id="Masculino">
+                <label for="Masculino">Masculino</label>
+            </p>
+            <p>
+                <input type="radio" name="genero" id="Feminino">
+                <label for="Feminino">Feminino</label>
+            </p>
+            <p>
+                <input type="radio" name="genero" id="Não Informar">
+                <label for="Não Informar">Não Informar</label>
+            </p>
+        </div>
+
+        <p style="
+            margin-top: 16px;
+            margin-bottom: 6px;
+        ">Quais linguagens que você sabe?</p>
+        <div>
+            <p>
+                <input type="checkbox" name="linguagens" id="HTML">
+                <label for="HTML">HTML</label>
+            </p>
+            <p>
+                <input type="checkbox" name="linguagens" id="CSS">
+                <label for="CSS">CSS</label>
+            </p>
+            <p>
+                <input type="checkbox" name="linguagens" id="JS">
+                <label for="JS">JS</label>
+            </p>
+            <p>
+                <input type="checkbox" name="linguagens" id="PHP">
+                <label for="PHP">PHP</label>
+            </p>
+            <p>
+                <input type="checkbox" name="linguagens" id="Java">
+                <label for="Java">Java</label>
+            </p>
+        </div>
+
+        <div style="margin-top:12px auto;">
+            <p style="
+                margin-top: 16px;
+                margin-bottom: 6px;
+            ">
+                <input type="checkbox" name="termsOfService" id="termsOfService">
+                <label for="termsOfService">Aceite os <a href="">termos de serviço</a></label>
+            </p>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function changeAge() {
+            const age = document.querySelector('input[type="range"]').value
+
+            document.getElementById('age').innerText = `Idade (${age} anos)`
+        }
+    </script>
+</body>
+
+</html>

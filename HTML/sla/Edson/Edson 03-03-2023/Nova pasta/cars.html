@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #e7e7e7;
+        }
+
+        body {
+            background-image: url(philip-blank-uza5OejIYQ8-unsplash.jpg);
+            background-size: cover;
+
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(30, 30, 30, 0.5);
+            backdrop-filter: blur(12px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 24px 36px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form h2 {
+            margin-bottom: 8px;
+            font-size: xx-large;
+        }
+
+        label:not(:first-of-type) {
+            margin-top: 16px;
+        }
+
+        label {
+            margin-bottom: 4px;
+        }
+
+        form button:first-of-type {
+            margin-top: 16px;
+        }
+
+        form button {
+            width: 100%;
+            background-color: transparent;
+            border: 1.5px solid rgba(255, 255, 255, 0.2);
+            padding: 8px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        form button:not(:first-of-type) {
+            margin-top: 6px;
+        }
+
+        select {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+
+            padding: 10px 12px;
+        }
+
+        select option {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" class="custom-select">
+        <h2>Concessionária</h2>
+        <label for="email">Escolha um carro:</label>
+
+
+        <select name="" id="">
+            <option value="0">Selecione um carro:</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Citroen</option>
+            <option value="4">Ford</option>
+            <option value="5">Honda</option>
+            <option value="6">Jaguar</option>
+            <option value="7">Land Rover</option>
+            <option value="8">Mercedes</option>
+            <option value="9">Mini</option>
+            <option value="10">Nissan</option>
+            <option value="11">Toyota</option>
+            <option value="12">Volvo</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+
+</html>

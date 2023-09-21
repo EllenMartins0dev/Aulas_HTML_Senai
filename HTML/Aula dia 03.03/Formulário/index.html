@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0 auto;
+        }
+
+        form,
+        h1,
+        h2,
+        h3,
+        a {
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        div {
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        a:link {
+            text-decoration: none;
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> Login</h1>
+        <form name="flogin">
+            <label for="login">Login:</label><br><br>
+            <input type="text" name="login" size="30" maxlength="30"> <br><br>
+            <label for="senha">Senha:</label><br><br>
+            <input type="password" name="senha" size="30" maxlength="30"> <br><br>
+            <input type="submit" value="Logar">
+            <input type="reset" value="Limpar"><br><br>
+        </form>
+        <a href="EsqueciMinhaSenha.html">Esqueci minha senha</a><br>
+        <a href="comboBox.html">Opções</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <title>Campo de escolha</title><style> 
+        body{
+            background-color: rgb(50, 49, 49);
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        h3{
+            color: black;
+        }
+        h1,h2,label{
+            color:white;
+        }
+        div {
+            text-align: center;
+            margin: 0 auto;
+          align-items: center;
+          justify-content: center;
+          padding-top: 25vh;
+        }
+        form {
+            padding:20px;
+        }
+        input {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: antiquewhite;
+            height: 9vh;
+            width: 12vh;
+            text-align: center;
+            margin: 0 auto;
+            align-items: center;
+        }
+        li {
+            display:inline-block;
+        }
+        ul li a:hover {
+text-decoration: none;
+padding: 10px 5px;
+background-color: aliceblue;
+margin-right: 15px;
+border-radius: 5px;
+color: black;
+font-weight: bold;
+border: 1px solid white;
+        }
+        button:hover {
+            background-color: aquamarine;
+        }
+        h3:hover{
+            color: blue;
+        }
+        ul {
+            list-style: none;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+         <form oninput="result.value=slider.value" name="form1">
+        <label for="vol">Brilho de tela (entre 0 a 100):</label>
+        <input type="range" id="slider" min="0" max="100">
+        O valor é <output name="result" for="slider">30</output>  
+        <input type="submit" value="Enviar">
+        <br><br>
+        <h1>Formulário</h1>
+        <form name="flogin">
+            <label for="name">Nome:</label><br><br>
+            <input type="text" name="name" size="30" maxlength="30"><br><br>
+            <label for="age">Idade:</label><br><br>
+            <input type="text" name="age" size="30" maxlength="30"><br><br>
+            <label for="cell">Telefone:</label><br><br>
+            <input type="text" name="cell" size="30" maxlength="30"><br><br><br><br><br><br>
+            <class="button">
+                <ul>
+<li><a href="Escolha.html">Trabalho Futuro</a></li>
+                </ul>
+     
+                <class="button">
+                    <ul>
+    <li><a href="Escolha1.html">Proramação</a></li>
+                    </ul>
+         
+            <br><br>
+        </form>
+    </div>
+   
+</body>
+</html>

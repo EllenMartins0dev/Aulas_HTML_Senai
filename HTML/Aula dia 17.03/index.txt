@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Volvo | Brazil Cars</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="volvologo.png" type="image/x-icon">
+    </head>
+    <header>
+    <body>
+        <div id="cabecalho">
+            <div id="logo">
+                <img src="volvologo.png" alt="" height="80px" width="80px">
+            </div>
+    
+            <div id = "menu">
+                <a href="comprar.html">Comprar</a>
+                <a href="vender.html">Vender</a>
+                <a href="faleConosco.html">Fale conosco</a>
+                <a href="minhaConta.html">Minha conta</a>
+            </div>
+        </div>
+    </header>
+            <div id="conteudo">
+                <div id="titulo">
+                    <h1>Alemãozinho caminhões</h1>
+            </div>
+    
+            <div id="produto">
+                <img src="caminhao2.jpg" alt="">
+            </div>
+    </div>
+    <br><br><br><br>
+    <div id="rodape">
+        <a href="http://instagram.com"> <img src="logoinstagram.png" alt="" height="80px" width="80px">
+            <a href="http://facebook.com"><img src="face.png" alt="" height="80px" width="80px">
+    </div>
+    </body>    
+</html>

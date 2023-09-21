@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça uma escolha</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            margin: 0 auto;
+        }
+
+        form,
+        h1,
+        h2,
+        h3,
+        a {
+            color: rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        div {
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        a:link {
+            text-decoration: none;
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Defina uma opção abaixo:</h1>
+        <form name="form1">
+            <label for="programs">Programação</label>
+            <select id="programs" name="cars">
+                <option value="opções">Opções</option>
+                <option value="HTML">HTML</option>
+                <option value="Java">Java</option>
+                <option value="C++">C++</option>
+                <option value="Python">Python</option>
+            </select>
+        </form><br><br>
+        <h2>Gostaria de receber material do código?</h2>
+        <form name="form2">
+            <label for="option">Receber</label>
+            <select id="option" name="cars">
+                <option value="opções">Opções</option>
+                <option value="sim">Sim</option>
+                <option value="não">não</option>
+            </select>
+        </form><br><br>
+        <label for="msg">Digite seu comentário</label><br>
+        <textarea id="msg"></textarea>
+    <br><br>
+    <input type="submit" value="Enviar"><br><br>
+    <input type="reset" value="Limpar"><br><br>
+    <a href="index.html">Retornar a página inicial</a><br>
+    <a href="EsqueciMinhaSenha.html">Redefina a senha aqui</a>
+    </div>
+    
+</body>
+</body>
+
+</html>

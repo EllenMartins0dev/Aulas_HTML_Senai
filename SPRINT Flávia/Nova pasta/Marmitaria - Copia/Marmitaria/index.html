@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmitaria Gosto Caseiro</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <header id="cabecalho">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="imagens/Logo1.png" alt="Logo" class="d-inline-block align-text-top">
+          Gosto Caseiro
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <a class="nav-link" href="#">Cadastro</a></button>
+            </li>
+            <li class="nav-item">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a class="nav-link active" id="button-fale" href="#">Fale Conosco</a>
+              </button>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Cardapio
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Cardápio.html">Cardapio</a></li>
+                <li><a class="dropdown-item" href="CardapioVegano.html">Cardapio Vegano</a></li>
+                <li><a class="dropdown-item" href="CardapioVegetariano.html">Cardapio Vegetariano</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/Pagina1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/Pagina2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/Pagina3.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/Pagina4.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/Pagina5.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Faça seu Cadastro</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="tudo">
+            <form action="">
+              <div class="input">
+                <input id="nome" type="text" name="nome" size="20" placeholder="Nome Completo" required>
+              </div>
+              <div class="input">
+                <input id="email" type="text" name="email" size="20" placeholder="Email" required>
+              </div>
+              <div class="input">
+                <input id="senha" type="text" name="senha" maxlength="15" size="20" placeholder="Senha" required>
+              </div>
+              <div class="input">
+                <input id="cpf" type="text" name="cpf" maxlength="11" size="20" placeholder="CPF" required>
+              </div>
+              <div id="text">
+                <h3>Logar com</h3>
+              </div>
+              <div class="teste">
+
+                <div id="sla">
+                  <ion-icon name="logo-google"></ion-icon>
+                  <ion-icon name="logo-facebook"></ion-icon>
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+              </div>
+              <div id="liveAlertPlaceholder"></div>
+              <div class="modal-footer " class="btn-close" data-bs-dismiss="alert" data-bs-target="#my-alert"
+                aria-label="Close" id="liveAlertBtn">
+                <button type="button" class="content">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span> Cadastrar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Como podemos te Ajudar?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="zap">
+          </div>
+          <div class="problema">
+            <form action="">
+              <div class="input">
+                <input id="nome" type="text" name="nome" size="40" placeholder="Nome Completo" required>
+              </div>
+              <div class="input">
+                <input id="idade" type="text" name="idade" maxlength="11" size="2" placeholder="Idade"
+                  required>
+              </div>
+              <div class="input">
+                <select name="assunto">
+                  <option value="selecione">Selecione</option>
+                  <option value="reclamação">Reclamação</option>
+                  <option value="aviso">Problema na entrega</option>
+                  <option value="aviso">Encomendar</option>
+                  <option value="cancelamento">Cancelamento</option>
+                  <option value="cancelamento">Outros</option>
+              </select> </div>
+            </div>
+              <div class="input">
+                <input id="email" type="text" name="email" size="40" placeholder="Email" required>
+              </div>
+              <div class="input">
+                <input id="telefone" type="text" name="telefone" maxlength="11" size="40" placeholder="Telefone/Celular"
+                  required>
+              </div>
+              <textarea class="textarea" name="Descrição" placeholder="Digite aqui" required></textarea><br><br>
+            </form>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="conteudo">
+    <div id="titulo">
+      <br>
+      <h1>Sobre Nós</h1>
+    </div>
+    <section class="section1">
+          <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <h3><b><br>O que faz nossa Marmitaria tão especial?</b> 
+              <hr>   
+            <p> Marmitaria Gosto Caseiro é uma empresa que preza a dar aos nossos
+              clientes um atendimento de qualidade e com muita agilidade.
+              Preparamos o seu almoço com todo cuidado e garantimos um cardápio
+              deliciosamente variado, gostoso e saudável. </p>
+            <p>Além disso, atendemos
+              todos os bairros de Piracicaba!!</p>
+            <p>Tempo Estimativa de cada Entrega: 30 - 50min</p>
+          </h3>
+    </section>
+  </div>
+
+  <footer id="copyright">
+    <address class="texto21">
+      <img class="logo" src="imagens/Logo1.png" alt="Logo" class="d-inline-block align-text-top">
+      <strong>Marmitaria Gosto Caseiro - Vila Fátima</strong>
+      <br>
+      <p> Av. Mal. Castelo Branco, 1000 - Jardim Primavera, Piracicaba </p>
+      <abbr title="phone" class="endereco"> <ion-icon name="logo-whatsapp"></ion-icon></abbr>
+      (19)XXXXX-XXXX
+      <hr>
+      <div class="direitos">
+        &#169; 2023 - Todos os direitos reservados<br>
+      </div>
+    </address>
+  </footer>
+
+
+</body>
+<script>
+  const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+  const appendAlert = (message, type) => {
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+      `   <div>${message}</div>`,
+      '</div>'
+    ].join('')
+
+    alertPlaceholder.append(wrapper)
+  }
+
+  const alertTrigger = document.getElementById('liveAlertBtn')
+  if (alertTrigger) {
+    alertTrigger.addEventListener('click', () => {
+      appendAlert('Você foi cadastrado com sucesso!!')
+    })
+  } 
+</script>
+
+<script type="text/javascript">
+  function toggle() {
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active')
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active')
+  }
+</script>
+
+<script src="/js/popper.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</html>

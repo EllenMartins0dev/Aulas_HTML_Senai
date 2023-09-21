@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmitez Bon Appetit</title>
+    <link rel="stylesheet" href="CSS/style1.css">
+</head>
+
+<body>
+    <div class="container" id="blur">
+        <div id="cabecalho">
+            <header>
+                <div id="logo">
+                    <img src="imagens/LOGO1.png" alt="">
+                </div>
+                <div id="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="Cadastro.html" class="opcoes" target="_blank"> Cadastro</a></li>
+                            <li><a href="cardapio.html" class="opcoes" target="_blank"> Cardapio</a></li>
+                            <li><a href="#" class="opcoes" onclick="toggle()"> Fale Conosco</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="c-icon">
+                    <div id="barra">
+                        <input class="pesquisa" type="text" name="texto" placeholder="Pesquisar">
+                        <a class="btn" href="#">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </a>
+                    </div>
+            </header>
+            <hr>
+            <div id="capa">
+                <a href="cardapio.html" target="_blank"><button>Peça Agora</button></a>
+                <h3 class="parte1">Atendimento de Segunda á Sexta</h3>
+                <h3 class="parte2">Das 10h ás 14h</h3>
+            </div>
+        </div>
+        <div id="conteudo">
+            <section class="section1">
+                <div id="titulo">
+                    <h1>Sobre Nós</h1>
+                    <br><br>
+                </div>
+                <div id="texto">
+                    <div class="img">
+                        <img src="imagens/churrascaria.webp" alt="">
+                        <h3><br><br><b>O que faz nossa Marmitaria tão especial?
+                                <hr>
+                            </b>
+                            <p> Marmitaria Bon Appetit é uma empresa que preza a dar aos nossos
+                                clientes um atendimento de qualidade e com muita agilidade.
+                                Preparamos o seu almoço com todo cuidado e garantimos um cardápio
+                                deliciosamente variado, gostoso e saudável. <p>Além disso, atendemos
+                                todos os bairros de Piracicaba!!</p> <p>Tempo Estimativa de  cada Entrega: 30 - 45min</p>
+                        </h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="rodape">
+        <a href="http://instagram.com"> <img src="imagens/logoinstagram.png"></a>
+    
+        <a href="https://facebook.com"> <img src="imagens/face.png" alt=""></a>
+    </div>
+    <div id="popup">
+        <div class="zap">
+            <br><br><br><br><br><br><br><br><br>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <h5>: (+55) 19 xxxxxxxxx</h5>
+        </div>
+        <div class="problema">
+            <h2>Como podemos te Ajudar?</h2><br>
+            <form action="">
+                <textarea name="Descrição" placeholder="Digite Aqui"></textarea><br><br>
+                <a href="#" onclick="toggle()"> Confirmar</a>
+                <a href="#" onclick="toggle()"> Cancelar</a>
+        </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    </body>
+</html>

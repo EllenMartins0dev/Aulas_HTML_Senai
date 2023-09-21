@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="volvologo.png" type="image/x-icon">
+</head>
+<header>
+    <body>
+        <div id="cabecalho">
+            <div id="logo">
+                <img src="volvologo.png" alt="" height="80px" width="80px">
+            </div>
+    
+            <div id = "menu">
+                <a href="index.html">Página inicial</a>
+                <a href="#">Vender</a>
+                <a href="#">Fale conosco</a>
+                <a href="#">Minha conta</a>
+            </div>
+        </div>
+    </header>
+                <div id="titulo">
+                    <h1>Sessão de compra</h1>
+            </div>
+            <div id="img">
+                <img src="caminhao2.jpg" alt="">
+            </div>
+    <br><br><br><br>
+    <div id="tabela">
+        <h2>Modelos</h2>
+        <table>
+            <thead>
+            <tr>
+            <th>Caminhão</th>
+            <th>Preço</th>
+            <th>Marca</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Scania R540</td>
+        <td>R$839.000,00</td>
+        <td>Scania</td>
+    </tr>
+    <tr>
+        <td>Volkswagen Delivery 9.170</td>
+        <td>360.000,00</td>
+        <td>Volkswagen</td>
+    </tr>
+    <tr>
+        <td>Mercedes-Benz Accelo 1016</td>
+        <td>Scania R540</td>
+        <td>Mercedes-Benz</td>
+    </tr>
+    <tr>
+        <td>Volvo VM 270</td>
+        <td>Scania R540</td>
+        <td>Volvo</td>
+    </tr>
+</tbody>
+        </table>
+        <br><br><br><br>
+    </div>
+    </body>    
+</html>
+</html>

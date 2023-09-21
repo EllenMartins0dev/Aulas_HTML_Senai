@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: rgb(229, 229, 228);
+}
+
+.navbar {
+    height: 50px;
+}
+
+.navbar a:hover {
+    background-color: hsl(217, 66%, 50%);
+    color: black;
+}
+
+.active a {
+    background-color: hsl(217, 66%, 50%);
+}
+.card-content img {
+    height: 300px;
+}

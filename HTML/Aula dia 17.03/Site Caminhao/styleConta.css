@@ -1,0 +1,143 @@
+ /* Estilizar texto */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+ 
+ 
+ /* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family:'inter', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: white;
+    
+  }
+  
+  
+  .titulo {
+    margin-bottom: 35px;
+  }
+  
+  .active{
+    background-color: purple;
+  }
+  
+  .alinharTexto{
+    text-align: center;
+  }
+  
+  /* Estilos Header */
+  
+  div.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 32px;
+    background-color: rgb(50, 2, 56);
+    color: white;
+  
+    position: relative;
+  }
+  
+  div.header div {
+    position: absolute;
+  
+    top: 16px;
+    left: 20px;
+  }
+  
+  div.header div img {
+    width: 64px;
+    height: 64px;
+  
+    align-self: flex-start;
+  }
+  
+  div.header ul {
+    display: flex;
+    
+   position: absolute;
+    top: 33px;
+    right: 20px;
+    list-style: none;
+  }
+  
+  div.header ul li {
+    text-align: right;
+    margin-left: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  div.header ul li a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+
+    border-radius: 5px;
+    color: #f2f2f2;
+  }
+  
+  div.header ul li a:hover {
+    cursor: pointer;
+    background-color: purple;
+  }
+
+ /* Programação forms */
+  form {
+    margin: 0 auto;
+    width: min-content;
+    box-shadow: 0 8px 32px 0 rgba(30, 30, 30, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    margin-bottom: 8px;
+    font-size: xx-large;
+}
+
+label:not(:first-of-type) {
+    margin-top: 16px;
+}
+
+form input {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+    padding: 4px 0;
+    width: 275px;
+    outline: 0;
+}
+
+form button:first-of-type {
+    margin-top: 16px;
+}
+
+form button {
+    width: 100%;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+form button:not(:first-of-type){
+    margin-top: 6px;
+}

@@ -1,0 +1,73 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(216, 184, 243);
+            }
+    header {
+      background-color: rgb(130,87,229);
+      justify-content: space-between;
+    }
+            #cabeçalho{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              height: 150px;
+              background-color: rgb(178, 145, 255);
+              margin: 0 auto;
+
+            }
+
+            #cabeçalho img{
+                width: 120px;
+                height: 120px;
+                margin-left: 50px;
+                margin-top: 10px;
+                background-color: rgb(130,87,229);
+            }
+        
+          #conteudo {
+            width: 90%;
+            margin: 0 auto;
+          }
+          h1{
+            text-align: center;
+            font-display: center;
+          }
+          #produto {
+            text-align: center;
+          }
+
+          #menu {
+            color: black;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+
+          #menu a :hover {
+            color:white;
+            background-color: rgb(53, 18, 77);
+            
+          }
+
+          #rodape{
+            height: 50px;
+            background-color: rgb(130,87,229);
+          }
+
+          #rodape img {
+            width: 30px;
+            height: 30px;
+            justify-content:left;
+            align-items: left;
+          }
+
+          a {
+            text-align:left;
+            text-decoration: none;
+            color: black;
+            justify-content: space-between;
+            margin-left: 50px;
+            padding: 50px;
+            margin-top: 10px;
+                    }

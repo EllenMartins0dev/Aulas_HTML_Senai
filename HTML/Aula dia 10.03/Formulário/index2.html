@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            background-image:url(aluno.avif);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div {
+            color: blanchedalmond;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            flex-direction: column;
+            display: flex;
+            height: 50px;
+            width: 50px;
+            padding: 30px 20px;
+            text-decoration: none;
+        }
+        a {
+            text-decoration: none;
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <h1>Contato</h1><br><br>
+            <label for="name">Nome:</label><br>
+            <input type="text" name="name" placeholder="Seu nome:" size="30" maxlength="30"><br><br><br>
+            <label for="endereço">Endereço:</label><br>
+            <input type="text" name="endereço" placeholder="Seu endereço:" size="30" maxlength="30"><br><br><br>
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" name="cidade" placeholder="Sua cidade:" size="30" maxlength="30"><br><br><br>
+            <label for="estado">Estado:</label>
+            <select name="estado" >
+                <option value="escolha">selecione</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Ceará</option>
+                <option value="am">Amazonas</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="mt">Mato Grosso</option>
+            </select><br><br>
+            <a href="parte2.html">Insira seus dados aqui</a>
+        </form>
+
+    </div>
+</body>
+</html>

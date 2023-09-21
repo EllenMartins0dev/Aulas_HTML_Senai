@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div {
+            color: blanchedalmond;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            flex-direction: column;
+            height: 50px;
+            width: 50px;
+            padding: 30px 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Contato</h1><br><br>
+        <label for="name">Nome:</label><br>
+        <input type="text" name="name" placeholder="Seu nome" size="30" maxlength="30"><br><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" placeholder="Seu email" size="30" maxlength="30"><br><br><br>
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" >
+            <option value="escolha">selecione</option>
+            <option value="pedido">Pedido</option>
+            <option value="reclamação">Reclamação</option>
+            <option value="aviso">Aviso</option>
+            <option value="cancelamento">Cancelamento</option>
+            </select><br><br>
+            <label for="mensagem">Mensagem:</label>
+
+            <textarea id="mensagem" name="mensagem" cols="20px" rows="5px">Digite sua mensagem</textarea><br><br><br><br>
+            <input type="submit" name="enviar" value="Enviar"> <br>
+                <input type="reset" name="reset" value="Limpar">
+
+</body>
+</html>
