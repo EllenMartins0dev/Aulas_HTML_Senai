@@ -1,0 +1,82 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(248, 243, 243);
+    border-radius: 2px;
+}
+.header img {
+    width: 90vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+
+}
+.header h1 {
+    color: rgb(230, 165, 206);
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgb(240, 220, 220);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    text-align: center;
+    height: 10vh;
+}
+
+.navbar a {
+    float: none; 
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-left: -8vh;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 9vh;
+    background-color: rgb(240, 220, 220);
+    margin-top: 1.5vh;
+}
+
+.navbar img {
+    margin-top: 2vh;
+margin-right: 90vh;
+width: 15vh;
+}
+
+
+.navbar a:hover {
+    background-color: rgb(240, 220, 220, 0.1);
+    color: rgb(223, 53, 189);
+}
+
+
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+
+.button button {
+    background-color: black;
+    border-radius: 2px;
+    margin-left: 48%;
+    margin-bottom: 5%;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer p {  
+    background-color: rgb(230, 165, 206);;
+    text-align: center;
+
+}
