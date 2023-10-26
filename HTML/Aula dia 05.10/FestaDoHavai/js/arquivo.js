@@ -29,7 +29,7 @@ let barracas_comidas = {
 
 // Botão
 document.getElementById("mudarCorBotao").addEventListener("click", function() {
-    const cores = ["#ff5733", "#33ff57", "#3366ff", "#ff33cc", "#ffff33"];
+    const cores = ["#ff5733", "#33ff57", "#3366ff", "#ff33cc", "#ffff33", "#fffff", "#f0f0f0", "#808080"];
     const corEscolhida = cores[Math.floor(Math.random() * cores.length)];
     document.body.style.backgroundColor = corEscolhida;
 });
@@ -42,9 +42,9 @@ function imprimirTextoFesta() {
     const paragrafoFesta = document.createElement("p");
     paragrafoFesta.innerText = "Nome: Festa do Havaí\n Dia: 07/10\n Horário: 16h - 21h \n Valor do ingresso: 10 reais\n Local: Av. Mal. Castelo Branco, 1000 - Jardim Primavera, Piracicaba - SP\n Atrações: Porções de batata, peixe, e outras iguarias";
     divFesta.appendChild(paragrafoFesta);
-    
-            botaoFesta.style.display = "none";
-    
+
+    botaoFesta.style.display = "none";
+
 }
 
 
