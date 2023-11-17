@@ -27,6 +27,7 @@ botao.addEventListener("click", cliqueNoBotao);
 // Modo escuro
 function mudarEstilo() {
     var body = document.body;
+    var titulo = document.querySelector('.titulo');
     var meuBotao = document.getElementById('meuBotao');
     var iconeModo = document.getElementById('iconeModo');
 
@@ -37,6 +38,7 @@ function mudarEstilo() {
         container.classList.remove('mudou');
         header.classList.remove('mudou');
         input.classList.remove('mudou');
+        titulo.classList.remove('mudou');
     } else {
         body.classList.add('mudou');
         meuBotao.classList.add('mudouBotao');
@@ -44,5 +46,6 @@ function mudarEstilo() {
         container.classList.add('mudou');
         header.classList.add('mudou');
         input.classList.add('mudou');
+        titulo.classList.add('mudou');
     }
 }
