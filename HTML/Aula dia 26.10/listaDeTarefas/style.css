@@ -1,19 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
     outline: none;
     font-size: 16px;
 }
 
+body {
+    height: 50rem;
+}
+
 
 /* Styles do botão */
 
 #botao-adicionar {
-    background-color: darkgrey;
+    background-color: rgb(231, 227, 227);
     border-radius: 5px;
     height: 40px;
     border: none;
@@ -21,6 +25,7 @@
     cursor: pointer;
     float: right;
     font-weight: 700;
+    margin-top: -8%;
 }
 
 #botao-adicionar:hover {
@@ -35,7 +40,7 @@
 /* Styles da div */
 
 .container {
-    background: grey;
+    background: rgb(183, 179, 179);
     max-width: 500px;
     border-radius: 10px;
     padding: 20px;
@@ -67,11 +72,59 @@ img {
 
 .item-tarefa {
     background-color: #f2f2f2f2;
-    box-shadow: 1px 4 px 10 px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4 px 10 px rgba(145, 142, 142, 0.2);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     border-radius: 5px;
     margin-top: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header.mudou {
+    background-color: transparent;
+    transition: 0.1s;
+}
+
+body.mudou {
+    background-color: #000;
+    color: #fff;
+}
+
+.container.mudou {
+    background: #444;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#input-principal.mudou {
+    background-color: #333;
+    color: #fff;
+}
+
+#meuBotao {
+    width: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.mudouBotao {
+    background-color: #000;
+    color: #fff;
+}
+
+#iconeModo {
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+button {
+    margin-left: 70rem;
+    width: 120px;
+    border: none;
 }

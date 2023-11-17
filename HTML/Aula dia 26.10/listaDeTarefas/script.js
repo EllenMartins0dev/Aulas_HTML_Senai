@@ -23,3 +23,26 @@ function cliqueNoBotao() {
 }
 
 botao.addEventListener("click", cliqueNoBotao);
+
+// Modo escuro
+function mudarEstilo() {
+    var body = document.body;
+    var meuBotao = document.getElementById('meuBotao');
+    var iconeModo = document.getElementById('iconeModo');
+
+    if (body.classList.contains('mudou')) {
+        body.classList.remove('mudou');
+        meuBotao.classList.remove('mudouBotao');
+        iconeModo.innerText = '🌙';
+        container.classList.remove('mudou');
+        header.classList.remove('mudou');
+        input.classList.remove('mudou');
+    } else {
+        body.classList.add('mudou');
+        meuBotao.classList.add('mudouBotao');
+        iconeModo.innerText = '☀️';
+        container.classList.add('mudou');
+        header.classList.add('mudou');
+        input.classList.add('mudou');
+    }
+}
